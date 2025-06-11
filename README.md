@@ -2,7 +2,7 @@
 
 Repositori ini berisi folder EFI untuk instalasi macOS 15 Sequoia pada laptop **Lenovo ThinkPad X1 Carbon Generasi ke-5 (Kaby Lake)**. Konfigurasi ini dioptimalkan untuk fungsionalitas sehari-hari.
 
-![ThinkPad X1 Carbon Gen 5](https://i.ibb.co/FLL5pPZX/Screenshot-2025-06-12-at-00-57-22.png) 
+![ThinkPad X1 Carbon Gen 5](Screenshot 2025-06-12 at 00.57.22.png) 
 
 ---
 
