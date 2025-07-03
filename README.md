@@ -67,6 +67,10 @@ Gunakan dengan risiko Anda sendiri. Saya tidak bertanggung jawab atas kehilangan
 2.  **Reset NVRAM:**
     * Saat pertama kali boot dengan EFI ini, sangat disarankan untuk memilih **"Reset NVRAM"** pada menu boot OpenCore. Komputer akan restart sekali, lalu Anda bisa boot ke macOS.
     * Catatan: jika tidak ada menu reset nvram matikan opsi hideAuxulary pada config.plist
+3. **Install VoodooHDA (optional if use appleALC working)**
+    * Jika menggunakan appleALC audio tidak berfungsi bisa gunakan voodooHDA dari link berikut [VoodooHDA](https://github.com/dhyzxx/VoodooHDAInstaller)
+    * Jangan lupa disable appleALC pada config.plist
+    * Untuk konfigurasi voodooHDA panel ikuti petunjuk pada repositori
 
 ---
 
