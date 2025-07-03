@@ -102,6 +102,14 @@
 				<key>Path</key>
 				<string>SSDT-YOGASMC.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-LID.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-LID.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -430,6 +438,10 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
+				<key>PinConfigurations</key>
+				<data>QBAhBBAAF5DwAfBAMBCLASAAoJBAECsB8AHwQPAB8EDwAfBA</data>
+				<key>device-id</key>
+				<data>cR0AAA==</data>
 				<key>layout-id</key>
 				<data>AwAAAA==</data>
 			</dict>
@@ -449,10 +461,16 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-index</key>
+				<data>/////w==</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-portcount</key>
+				<data>AgAAAA==</data>
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
 				<key>framebuffer-unifiedmem</key>
@@ -946,7 +964,7 @@
 				<key>Comment</key>
 				<string>V1.9.3 | AppleALC.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AppleALC</string>
 				<key>MaxKernel</key>
@@ -1000,7 +1018,7 @@
 				<key>Comment</key>
 				<string>V1.1.7 | FeatureUnlock.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/FeatureUnlock</string>
 				<key>MaxKernel</key>
@@ -1144,7 +1162,7 @@
 				<key>Comment</key>
 				<string>V1.3.4</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCLightSensor</string>
 				<key>MaxKernel</key>
@@ -1165,6 +1183,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/itlwm</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>RTCMemoryFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/RTCMemoryFixup</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1818,7 +1854,7 @@
 				<key>bluetoothInternalControllerInfo</key>
 				<data>AAAAAAAAAAAAAAAAAAA=</data>
 				<key>boot-args</key>
-				<string>-v -liliubetaall keepsyms=1 debug=0x100 -lilubetaall -igfxblr ipc_control_port_options=0 amfi=0x80</string>
+				<string>rtcfx_exclude=00-FF -liliubetaall keepsyms=1 debug=0x100 -igfxblr ipc_control_port_options=0 amfi=0x80 igfxonln=1 agdpmod=vit9696</string>
 				<key>csr-active-config</key>
 				<data>AwgAAA==</data>
 				<key>prev-lang:kbd</key>
